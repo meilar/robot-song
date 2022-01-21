@@ -37,8 +37,12 @@ function numTest(number) {
 $(document).ready(function() {
   $("button#go-btn").click(function() {
     console.log("the go button is working");
+    $("#output").toggle();
+    $("#user-form").toggle();
   });
   $("button#reset-btn").click(function() {
     console.log("the reset button is working");
+    $("#output").toggle();
+    $("#user-form").toggle();
   });
 });

@@ -5,3 +5,7 @@
 #user-form {
   padding: 2%;
 }
+
+#output {
+  display: none;
+}
