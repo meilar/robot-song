@@ -82,6 +82,30 @@ Test: It should return true if any other number is passed as an agrument.
 Code: `validation(123);`
 Expected Output: `true`
 
+#### Describe: arrBuilder(inputNum)
+
+Test: It should increment a counter equal to the value of inputNum.
+code: `arrBuilder(10);`
+Expected Output: console log: 10
+
+Test: It should push each value between 1 and the inputNum into a new array called outputArr.
+code: `arrBuilder(3);`
+Expected output: `[1, 2, 3]`
+
+#### Describe: inputTransform(inputNum)
+
+Test: It should create a new array by passing a value to arrBuilder then running that array through a for loop that pushes values into the new array.
+code: `inputTransform(3)`
+Expected output: `[1, 2, 3]`
+
+Test: it should run new array through a for each loop and return a numScore for each number.
+Code `inputTransform(3)`
+Expected output: [1, 0, 0] [0, 1, 0] [0, 0, 1]
+
+Test: it should replace numbers that inlcude a 1, 2, or 3 with a string.
+code: `inputTransform(4);`
+Expected output: [Beep, Boop, Won't You Be My Neighbor?, 4]
+
 
 
 
