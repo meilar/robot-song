@@ -1,9 +1,10 @@
-<h1 align="center">Matt's README Template</h1>
+<h1 align="center">Mr. Roboger's Neighborhood</h1>
 
 Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](www.mattheweilar.com)
 
 ## About this project
  
+This web application takes a number from the user and returns a range of numbers from 0 to the user inputted number with some themed substitutions made along the way. 
 
 ## Features
 
@@ -13,10 +14,10 @@ Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mai
 To view this webpage:
 
 1. Ensure that you have the most recent version of Git installed. [Instructions can be found here.](https://github.com/git-guides/install-git) 
-1. Clone this repository to your local machine using the Terminal or Bash command `git clone https://github.com/meilar/CHANGE_ME.git`.
-2. Open "index.html" in a CSS3 and HTML5-compliant browser such as Google Chrome, Mozilla Firefox, or Apple Safari.
+1. Clone this repository to your local machine using the Terminal or Bash command `git clone https://github.com/meilar/robot.git`.
+2. Open "index.html" in Google Chrome.
 
-[Alternately, a hosted version of this pages is available to view on Github Pages.](https://meilar.github.io/CHANGE_ME)
+[Alternately, a hosted version of this pages is available to view on Github Pages.](https://meilar.github.io/robot)
 
 ## Technologies Used
 
@@ -35,15 +36,19 @@ The following software tools were used to develop this page:
 
 ## Known Issues
 
+### Testing
+
+The following tests were conducted to focus development and practice test-driven development.
+
 ## Acknowledgements
 
-Thank you to my partner, Alex, for support in all ways. Thank you to my parents for encouraging technology exploration, even when resources were scarce. Thank you to the Kohlenberg Foundation for CHANGE ME.
+Thank you to my partner, Alex, for support in all ways. Thank you to my parents for encouraging technology exploration, even when resources were scarce. Thank you to the Kohlenberg Foundation for sending my mother get-well flowers.
 
 ## License 
 
-MIT License
-
 © 2022 Matthew Eilar
+
+MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -62,3 +67,32 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+
+
+
+
+
+WIP TODO
+
+    html
+      instructions
+      form
+      submit button
+      clear button
+      div for results area
+    utility logic
+      1 checker
+      2 checker
+      3 checker
+    variables
+      user input
+      output array
+    business logic
+      takes in number, spits out array for print
+    ui logic
+      click
+      reset
+      show/hide
+      print to dom
