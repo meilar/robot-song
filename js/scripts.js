@@ -1,7 +1,5 @@
 // Utility Logic
 
-
-
 function numSplit(number) {
   let readySplit = number.toString();
   let arr = Array.from(readySplit);
@@ -32,17 +30,38 @@ function numTest(number) {
 
 // Business Logic
 
+// function inputTransform(input)
+
 // UI Logic
+function singSong() {
+  console.log("singsong works")
+  $("#output").toggle();
+  $("#user-form").toggle();
+}
+
+function validation(number) {
+  if (number != NaN && number >= 0) {
+    return true;
+  } else {
+    return false;
+  } 
+}
+
 
 $(document).ready(function() {
   $("button#go-btn").click(function() {
-    console.log("the go button is working");
-    $("#output").toggle();
-    $("#user-form").toggle();
+    const inputNum = parseInt($("input#user-number").val());
+    console.log("input num is " + inputNum);
+    if (validation(inputNum)) {
+      singSong();
+    } else {
+      $("label#label1").hide();
+      $("label#label2").show();
+    }
+ 
+
   });
   $("button#reset-btn").click(function() {
-    console.log("the reset button is working");
-    $("#output").toggle();
-    $("#user-form").toggle();
+    location.reload(true);
   });
 });

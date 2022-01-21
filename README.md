@@ -99,8 +99,5 @@ WIP TODO
       output array
     business logic
       takes in number, spits out array for print
-    ui logic
-      click
-      reset
-      show/hide
+    
       print to dom
