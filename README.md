@@ -40,6 +40,23 @@ The following software tools were used to develop this page:
 
 The following tests were conducted to focus development and practice test-driven development.
 
+#### Describe: testBeep(number)
+
+Test: It should return true if the inputted number contains a 1.
+Code: `testBeep(1771)`
+Expected Output: `true`
+
+Test: It should return false if the inputted number does not contain a 1.
+Code: `testBeep(6776)`
+Expected Output: `false`
+
+#### Describe: numSplit(number)
+
+Test: It should split input number into an array of numbers.
+Code: `numSplit(1771)`
+Expected Output: `[1, 7, 7, 1]`
+
+
 ## Acknowledgements
 
 Thank you to my partner, Alex, for support in all ways. Thank you to my parents for encouraging technology exploration, even when resources were scarce. Thank you to the Kohlenberg Foundation for sending my mother get-well flowers.
