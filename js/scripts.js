@@ -7,19 +7,24 @@ function numSplit(number) {
   return outputArr;
 }
 
-function testBeep(number) {
-  let testIndex = 0;
+function numTest(number) {
+  let testIndex = [0, 0, 0];
   const numArr = numSplit(number);
   numArr.forEach(function(digit) {
     if (digit === 1) {
-      ++testIndex;
+      ++testIndex[0];
+      console.log("has a 1");
+    }
+    if (digit === 2) {
+      ++testIndex[1];
+      console.log("has a 2");
+    }
+    if (digit === 3) {
+      ++testIndex[2];
+      console.log("has a 3");
     }
   });
-  if (testIndex === 0) {
-    return false;
-  } else {
-    return true;
-  }
+  return testIndex;
 }
 
 

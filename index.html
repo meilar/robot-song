@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -11,7 +10,29 @@
 </head>
 <body>
   <div class="container">
-    <h1>Starting Template</h1>
+    <div id="header" class="jumbotron">
+      <h1>Mr. Roboger's Neighborhood</h1>
+      <p>Hello neighbor! Welcome to this neighborhood. How are you doing today? I'm glad we can be together.</p>
+      <p>Do you know what this is? This is a form. Enter a number in the form, and I will sing you a song based on the number you submitted.</p>
+    </div>
+    <div id="user-form" class="row">
+      <div class="col-sm-6">
+        <label for="user-numbger">Enter a number</label>
+        <input type="text" name="user-number" id="user-number">
+      </div>
+      <div class="col-sm-6">
+        <button class="btn btn-primary">Sing me a song!</button>
+      </div>
+    </div>
+    <div id="output" class= "row">
+      <div class="col-sm-6">
+        <p><em>Cough, cough.</em> 🎶 La la la la la 🎶 <span id="output-song"></span> 🎶</p>
+        <p>Isn't that lovely?</p>
+      </div>
+      <div class="col-sm-6">
+        <button class="btn btn-danger" id="restart">Start Over</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

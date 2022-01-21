@@ -99,10 +99,6 @@ WIP TODO
       submit button
       clear button
       div for results area
-    utility logic
-      1 checker
-      2 checker
-      3 checker
     variables
       user input
       output array
