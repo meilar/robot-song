@@ -93,12 +93,7 @@ SOFTWARE.
 
 WIP TODO
 
-    html
-      instructions
-      form
-      submit button
-      clear button
-      div for results area
+
     variables
       user input
       output array
