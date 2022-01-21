@@ -43,18 +43,46 @@ The following tests were conducted to focus development and practice test-driven
 #### Describe: testBeep(number)
 
 Test: It should return true if the inputted number contains a 1.
-Code: `testBeep(1771)`
+Code: `testBeep(1771);`
 Expected Output: `true`
 
 Test: It should return false if the inputted number does not contain a 1.
-Code: `testBeep(6776)`
+Code: `testBeep(6776);`
 Expected Output: `false`
+
+**note:this function and strategy for testing numbers was deleted and refactored into the numTest function**
+
+#### Describe: numTest(number)
+
+Test: it should return an array when called.
+Code: `numTest();`
+Expected output: `[0, 0, 0]`
+
+Test: It should increment a counter array based on the presence of 1, 2, or 3 in an input number.
+Code: `numtest(123);`
+Expected Output: `[1, 1, 1]`
+
+Test: It should increment a counter array based on the presence of each 1, 2, or 3 in an input number.
+Code: `numtest(11233);`
+Expected Output: `[2, 1, 2]`
 
 #### Describe: numSplit(number)
 
 Test: It should split input number into an array of numbers.
-Code: `numSplit(1771)`
+Code: `numSplit(1771);`
 Expected Output: `[1, 7, 7, 1]`
+
+#### Describe: validation(number)
+
+Test: It should return false if NaN is passed as an agrument.
+Code: `validation(NaN);`
+Expected Output: `false`
+
+Test: It should return true if any other number is passed as an agrument.
+Code: `validation(123);`
+Expected Output: `true`
+
+
 
 
 ## Acknowledgements
@@ -94,9 +122,7 @@ SOFTWARE.
 WIP TODO
 
 
-    variables
-      user input
-      output array
+
     business logic
       takes in number, spits out array for print
     
