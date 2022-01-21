@@ -16,20 +16,16 @@ function numTest(number) {
   numArr.forEach(function(digit) {
     if (digit === 1) {
       ++testIndex[0];
-      console.log("has a 1");
     }
     if (digit === 2) {
       ++testIndex[1];
-      console.log("has a 2");
     }
     if (digit === 3) {
       ++testIndex[2];
-      console.log("has a 3");
     }
   });
   return testIndex;
 }
-
 
 function validation(number) {
   if (number != NaN && number >= 0) {
@@ -54,7 +50,6 @@ function inputTransform(inputNum) {
   let outputArr = []
   initArr.forEach(function(number) {
     let numScore = numTest(number);
-    
     if (numScore[2] > 0) {
       outputArr.push("Won't you be my neighbor?");
     } else if (numScore[1] > 0) {
@@ -71,8 +66,8 @@ function inputTransform(inputNum) {
 // UI Logic
 
 function singSong(inputNum) {
-  console.log("singsong works and the input number is " +inputNum);
-  const songStr = inputTransform(inputNum);
+  const songArr = inputTransform(inputNum);
+  const songStr = songArr.join(" ");
   console.log(songStr);
   $("#output-song").text(songStr);
   $("#output").toggle();
@@ -94,7 +89,6 @@ function tooBig() {
 $(document).ready(function() {
   $("button#go-btn").click(function() {
     const inputNum = parseInt($("input#user-number").val());
-    console.log("input num is " + inputNum);
     if ((validation(inputNum)) === false) {
       invalid();
     } else if (inputNum > 99) {
