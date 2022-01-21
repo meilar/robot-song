@@ -37,7 +37,7 @@ function validation(number) {
 
 function arrBuilder(inputNum) {
   let index = 0;
-  let outputArr = []
+  let outputArr = [0]
   for (let iteration = 0; iteration < inputNum; iteration++) {
     index++;
     outputArr.push(index);

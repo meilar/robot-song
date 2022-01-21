@@ -106,9 +106,6 @@ Test: it should replace numbers that inlcude a 1, 2, or 3 with a string.
 code: `inputTransform(4);`
 Expected output: [Beep, Boop, Won't You Be My Neighbor?, 4]
 
-
-
-
 ## Acknowledgements
 
 Thank you to my partner, Alex, for support in all ways. Thank you to my parents for encouraging technology exploration, even when resources were scarce. Thank you to the Kohlenberg Foundation for sending my mother get-well flowers.
@@ -136,18 +133,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
-
-
-
-
-WIP TODO
-
-
-
-    business logic
-      takes in number, spits out array for print
-    
-      print to dom
