@@ -30,9 +30,28 @@ function numTest(number) {
   return testIndex;
 }
 
+
+function validation(number) {
+  if (number != NaN && number >= 0) {
+    return true;
+  } else {
+    return false;
+  } 
+}
+
+function arrBuilder(inputNum) {
+  let index = 0;
+  for (let iteration = 0; iteration < inputNum; iteration++) {
+    index++;
+  };
+  console.log(index);
+} 
+
 function inputTransform(inputNum) {
-  let initArr = numSplit(inputNum);
-  console.log(initArr);
+  let initArr = arrBuilder(inputNum);
+
+  numSplit(inputNum);
+  return initArr;
 }
 
 // UI Logic
@@ -51,13 +70,6 @@ function tryAgain() {
   $("label#label2").show();
 }
 
-function validation(number) {
-  if (number != NaN && number >= 0) {
-    return true;
-  } else {
-    return false;
-  } 
-}
 
 $(document).ready(function() {
   $("button#go-btn").click(function() {
