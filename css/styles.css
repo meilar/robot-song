@@ -1,24 +1,52 @@
-#header h1 {
+Body {
+  background-color: black;
+  color:lime;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'VT323', monospace;
   text-align: center;
+  font-size: xx-large;
+} 
+
+.container {
+  margin: auto;
+  max-width: 80%;
 }
 
-#user-form {
-  padding: 2%;
+button {
+  background-color: lime;
+  color: black;
+  border: limegreen 2px solid;
+  left: 50%;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'VT323', monospace;
+  font-size: xx-large;
+  display: inline-block;
+  height: 45px;
 }
 
-#output {
-  display: none;
+#go-btn {
+  margin-top: 5%;
 }
 
-#label2 {
-  display: none;
+input {
+  background-color: black;
+  color: lime;
+  border: lime 1px solid;
+  margin-left: 5%;
+  display: inline-block;
+  height: 45px;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'VT323', monospace;
+  font-size: xx-large;
 }
 
-#label3 {
+.hide {
   display: none;
 }
 
 .notes {
   margin-left: 10px;
   margin-right: 10px;
+  background-color: lime;
+  padding: 5px;
 }

@@ -5,35 +5,29 @@
   <title>Mr. Roboger's Neighborhood</title>
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <div id="header" class="jumbotron">
+    <div id="header">
       <h1>Mr. Roboger's Neighborhood</h1>
       <p>Hello neighbor! Welcome to this neighborhood. How are you doing today? I'm glad we can be together.</p>
       <p>Do you know what this is? This is a form. Enter a number in the form, and I will sing you a song based on the number you submitted.</p>
     </div>
-    <div id="user-form" class="row">
-      <div class="col-sm-6">
-        <label id="label1" for="user-number">Enter a number</label>
-        <label id="label2" for="user-number">Try again. No letters, just numbers. Any number you like.</label>
-        <label id="label3" for="user-number">That's going to be a long song! Can you choose a smaller number?</label>
-        <input type="text" name="user-number" id="user-number">
-      </div>
-      <div class="col-sm-6">
-        <button id="go-btn" class="btn btn-primary">Sing me a song!</button>
-      </div>
+    <div id="user-form" class="row centered">
+      <label id="label1" for="user-number">Enter a number</label>
+      <label id="label2" class="hide" for="user-number">Try again. No letters, just numbers. Any number you like.</label>
+      <label id="label3" class="hide" for="user-number">That's going to be a long song! Can you choose a smaller number?</label>
+      <input type="text" name="user-number" id="user-number">
     </div>
-    <div id="output" class= "row">
-      <div class="col-sm-6">
+    <button id="go-btn" >Sing me a song!</button>
+    <div id="output" class= "hide">
         <p><em>Cough, cough.</em> <span class="notes">🎶</span> La la la la la <span class="notes">🎶</span><span id="output-song"></span><span class="notes">🎶</span></p>
         <p>Isn't that lovely?</p>
-      </div>
-      <div class="col-sm-6">
-        <button class="btn btn-danger" id="reset-btn">Start Over</button>
-      </div>
+        <button id="reset-btn">Start Over</button>
     </div>
   </div>
 </body>
