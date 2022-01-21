@@ -1,9 +1,12 @@
-// Utility Logic
+// Business Logic
 
 function numSplit(number) {
   let readySplit = number.toString();
-  let arr = Array.from(readySplit);
-  let outputArr = arr.map(Number);
+  let readyArr = Array.from(readySplit);
+  let outputArr = [];
+  readyArr.forEach(function (element) {
+    outputArr.push(parseInt(element))
+  });
   return outputArr;
 }
 
@@ -27,16 +30,25 @@ function numTest(number) {
   return testIndex;
 }
 
-
-// Business Logic
-
-// function inputTransform(input)
+function inputTransform(inputNum) {
+  let initArr = numSplit(inputNum);
+  console.log(initArr);
+}
 
 // UI Logic
-function singSong() {
-  console.log("singsong works")
+
+function singSong(inputNum) {
+  console.log("singsong works and the input number is " +inputNum);
+  const songStr = inputTransform(inputNum);
+  console.log(songStr);
+  $("#output-song").text(songStr);
   $("#output").toggle();
   $("#user-form").toggle();
+}
+
+function tryAgain() {
+  $("label#label1").hide();
+  $("label#label2").show();
 }
 
 function validation(number) {
@@ -47,20 +59,17 @@ function validation(number) {
   } 
 }
 
-
 $(document).ready(function() {
   $("button#go-btn").click(function() {
     const inputNum = parseInt($("input#user-number").val());
     console.log("input num is " + inputNum);
     if (validation(inputNum)) {
-      singSong();
+      singSong(inputNum);
     } else {
-      $("label#label1").hide();
-      $("label#label2").show();
+      tryAgain();
     }
- 
-
   });
+  
   $("button#reset-btn").click(function() {
     location.reload(true);
   });
