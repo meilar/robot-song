@@ -65,6 +65,23 @@ function inputTransform(inputNum) {
 
 // UI Logic
 
+function speak(songStr){
+  
+  var utterThis = new SpeechSynthesisUtterance(songStr);
+  utterThis.onend = function (event) {
+      console.log('SpeechSynthesisUtterance.onend');
+  }
+  utterThis.onerror = function (event) {
+      console.error('SpeechSynthesisUtterance.onerror');
+  }
+
+  utterThis.pitch = 1;
+  utterThis.rate = 1.2;
+  
+  synth.speak(utterThis);
+
+}
+
 function singSong(inputNum) {
   const songArr = inputTransform(inputNum);
   const songStr = songArr.join(" ");
@@ -73,6 +90,7 @@ function singSong(inputNum) {
   $("#output").toggle();
   $("#user-form").hide();
   $("#go-btn").hide();
+  speak(songStr);
 }
 
 function invalid() {
