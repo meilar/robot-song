@@ -71,7 +71,8 @@ function singSong(inputNum) {
   console.log(songStr);
   $("#output-song").text(songStr);
   $("#output").toggle();
-  $("#user-form").toggle();
+  $("#user-form").hide();
+  $("#go-btn").hide();
 }
 
 function invalid() {

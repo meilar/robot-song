@@ -12,6 +12,11 @@ Body {
   max-width: 80%;
 }
 
+img {
+  max-width: 40%;
+  border-radius: 20px;
+}
+
 button {
   background-color: lime;
   color: black;
@@ -38,6 +43,7 @@ input {
   font-family: 'Permanent Marker', cursive;
   font-family: 'VT323', monospace;
   font-size: xx-large;
+  margin-top: 2%;
 }
 
 .hide {
@@ -50,3 +56,23 @@ input {
   background-color: lime;
   padding: 5px;
 }
+
+input:focus, textarea:focus, select:focus {
+
+  border: 1px solid rgba(233, 229, 29, 0.945) !important;
+  
+  box-shadow: 0 0 3px rgba(233, 229, 29, 0.945) !important;
+  
+  -moz-box-shadow: 0 0 3px rgba(233, 229, 29, 0.945) !important;
+  
+  -webkit-box-shadow: 0 0 3px rgba(233, 229, 29, 0.945) !important;
+  
+  }
+  
+  input:focus, textarea:focus, select:focus {
+  
+  outline-offset: 0px !important;
+  
+  outline: none !important;
+  
+  }
