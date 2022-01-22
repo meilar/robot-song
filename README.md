@@ -14,10 +14,10 @@ This web application takes a number from the user and returns a range of numbers
 To view this webpage:
 
 1. Ensure that you have the most recent version of Git installed. [Instructions can be found here.](https://github.com/git-guides/install-git) 
-1. Clone this repository to your local machine using the Terminal or Bash command `git clone https://github.com/meilar/robot.git`.
+1. Clone this repository to your local machine using the Terminal or Bash command `git clone https://github.com/meilar/robot-song.git`.
 2. Open "index.html" in Google Chrome.
 
-[Alternately, a hosted version of this pages is available to view on Github Pages.](https://meilar.github.io/robot)
+[Alternately, a hosted version of this pages is available to view on Github Pages.](https://meilar.github.io/robot-song)
 
 ## Technologies Used
 
