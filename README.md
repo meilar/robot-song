@@ -3,10 +3,8 @@
 Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](www.mattheweilar.com)
 
 ## About this project
- 
+![screenshot of project](/robot_screenshot.jpeg) 
 This web application takes a number from the user and returns a range of numbers from 0 to the user inputted number with some themed substitutions made along the way. 
-
-## Features
 
 
 ## How to view
