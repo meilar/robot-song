@@ -1,6 +1,6 @@
 <h1 align="center">Mr. Roboger's Neighborhood</h1>
 
-Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](www.mattheweilar.com)
+Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](https://www.mattheweilar.com)
 
 ## About this project
 ![screenshot of project](/robot_screenshot.jpeg) 
